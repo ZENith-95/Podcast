@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Podcast Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="main-nav">
+        <div class="logo">
+          <img
+            src="./Assets/pod-logo.png"
+            alt="Podcast Logo"
+            class="logo-icon" />
+          <span>Podcast</span>
+        </div>
+        <ul class="nav-list">
+          <li><a href="#">Episode</a></li>
+          <li><a href="#">Review</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+          <a href="#" class="login-btn">Login</a>
+          <a href="#" class="subscribe-btn">Subscribe</a>
+        </div>
+      </nav>
+    </header>
+
+    <div class="main">
+      <section class="hero-section">
+        <div class="hero-content">
+          <div class="hero-header">
+            <h1>WE TALK,<br />YOU LISTEN</h1>
+            <p>The most interactive show on the internet</p>
+          </div>
+          <div class="start-listening">
+            <span>Start Listening</span>
+            <div class="start-listening-right">
+              <div id="visualiser" class="visualiser">
+                <img
+                  src="./Assets/visualiser1.png"
+                  alt="Visualiser Animation" />
+              </div>
+              <div class="play-pause-btn" id="playPauseBtn">
+                <img
+                  src="./Assets/play-btn.png"
+                  alt="Play Button"
+                  id="playPauseImage" />
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-footer">
+            <div class="listener-info">
+              <img
+                src="./Assets/avatar1.png"
+                alt="Listener"
+                class="listener-avatar" />
+              <img
+                src="./Assets/avatar2.png"
+                alt="Listener"
+                class="listener-avatar" />
+              <img
+                src="./Assets/avatar3.png"
+                alt="Listener"
+                class="listener-avatar" />
+              <div class="listener-info2">
+                <div class="listener-avatar">100K+</div>
+                Worldwide listeners
+              </div>
+            </div>
+          </div>
+        </div>
+        <section class="now-playing">
+          <div class="player">
+            <div class="now-playing-left">
+              <i class="prev-next"
+                ><img src="./Assets/back-desgn.png" alt=""
+              /></i>
+              <div class="main-play">
+                <img
+                  src="./Assets/main-img-design.png"
+                  alt="Episode Thumbnail"
+                  class="episode-thumbnail" />
+                <div class="player-details">
+                  <p class="episode-info">Enam Baity</p>
+                  <h3 class="episode-title">The Design Principles</h3>
+                  <p class="episode-info">Episode 1 | Season 2</p>
+                  <p>05:56</p>
+                </div>
+              </div>
+              <i class="prev-next"
+                ><img src="./Assets/foward-design.png" alt=""
+              /></i>
+            </div>
+            <div class="player-controls">
+              <div class="controls-top">
+                <div class="controls">
+                  <i class="cont-icon"
+                    ><img src="./Assets/shuffle.png" alt="shuffle"
+                  /></i>
+                  <i class="cont-icon"
+                    ><img src="./Assets/prev.png" alt="previous"
+                  /></i>
+                  <i class="cont-icon"
+                    ><img src="./Assets/play-pause-button.png" alt="play-pause"
+                  /></i>
+                  <i class="cont-icon"
+                    ><img src="./Assets/next.png" alt="next"
+                  /></i>
+                  <i class="cont-icon"
+                    ><img src="./Assets/repeat.png" alt="repeat"
+                  /></i>
+                </div>
+                <div class="volume">
+                  <input
+                    type="range"
+                    class="vol-meter"
+                    min="0"
+                    max="100"
+                    value="65" />
+                  <i class="vol-icon"
+                    ><img src="./Assets/speaker.png" alt=""
+                  /></i>
+                </div>
+              </div>
+              <div class="controls-bottom">
+                <span>1:56</span>
+                <input
+                  type="range"
+                  class="progress-slider"
+                  min="0"
+                  max="100"
+                  value="18" />
+                <span>-4:44</span>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <section class="popular-trending">
+        <div class="popular-trending-left">
+          <h2>Popular & Trending</h2>
+          <div class="trending-images">
+            <div class="trending-img1">
+              <div class="play-btn">
+                <img src="./Assets/pop-play.png" alt="" />
+              </div>
+            </div>
+            <div class="trending-img2"></div>
+          </div>
+        </div>
+        <div class="popular-trending-right">
+          <h4 class="see-all">See All Trending Podcasts</h4>
+          <h3 class="pop-h3">JOHNATHAN EDEM</h3>
+          <h2 class="pop-title">
+            Among Podcasts With A Similar Concept Or Genre, What Topics Do They
+            Discuss?
+          </h2>
+          <h3 class="pop-h3">Podcast <span> December 10</span></h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi,
+            pariatur. Ea quas dolorem perferendis et omnis accusantium fugit
+            eius consectetur iusto itaque dolor, dignissimos nesciunt.
+          </p>
+          <div class="popular-bottom">
+            <i style="cursor: pointer"
+              ><img src="./Assets/pop-pause.png" alt=""
+            /></i>
+            <div class="popular-bottom-details">
+              <h3>Episode 1. Season 2</h3>
+              <p>Duration, 12:56</p>
+            </div>
+            <button>Open page</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="explore-podcasts">
+        <div class="explore-header">
+          <h2>Explore More Podcasts</h2>
+          <div class="podcast-categories">
+            <div class="category-btn active">All</div>
+            <div class="category-btn">Music</div>
+            <div class="category-btn">Technology</div>
+            <div class="category-btn">Business</div>
+            <div class="category-btn">Entertainment</div>
+          </div>
+        </div>
+        <div class="podcast-list">
+          <div class="podcast-card">
+            <div class="pod-img">
+              <img src="./Assets/main-img-design.png" alt="" />
+            </div>
+            <div class="pod-right">
+              <h5>The design principles</h5>
+              <div class="pod-midd">
+                <p>Episode 1 . Season 2</p>
+                <div class="pod-controls">
+                  <i><img src="./Assets/play-pause-button.png" alt="" /></i>
+                  <i><img src="./Assets/next.png" alt="" /></i>
+                </div>
+              </div>
+              <div class="pod-bottom">
+                <span>1:56</span>
+                <input
+                  type="range"
+                  class="progress-slider"
+                  min="0"
+                  max="100"
+                  value="18" />
+                <span>-4:44</span>
+              </div>
+            </div>
+          </div>
+          <div class="podcast-card">
+            <div class="pod-img">
+              <img src="./Assets/main-img-design.png" alt="" />
+            </div>
+            <div class="pod-right">
+              <h5>The design principles</h5>
+              <div class="pod-midd">
+                <p>Episode 1 . Season 2</p>
+                <div class="pod-controls">
+                  <i><img src="./Assets/play-pause-button.png" alt="" /></i>
+                  <i><img src="./Assets/next.png" alt="" /></i>
+                </div>
+              </div>
+              <div class="pod-bottom">
+                <span>1:56</span>
+                <input
+                  type="range"
+                  class="progress-slider"
+                  min="0"
+                  max="100"
+                  value="18" />
+                <span>-4:44</span>
+              </div>
+            </div>
+          </div>
+          <div class="podcast-card">
+            <div class="pod-img">
+              <img src="./Assets/main-img-design.png" alt="" />
+            </div>
+            <div class="pod-right">
+              <h5>The design principles</h5>
+              <div class="pod-midd">
+                <p>Episode 1 . Season 2</p>
+                <div class="pod-controls">
+                  <i><img src="./Assets/play-pause-button.png" alt="" /></i>
+                  <i><img src="./Assets/next.png" alt="" /></i>
+                </div>
+              </div>
+              <div class="pod-bottom">
+                <span>1:56</span>
+                <input
+                  type="range"
+                  class="progress-slider"
+                  min="0"
+                  max="100"
+                  value="18" />
+                <span>-4:44</span>
+              </div>
+            </div>
+          </div>
+          <div class="podcast-card">
+            <div class="pod-img">
+              <img src="./Assets/main-img-design.png" alt="" />
+            </div>
+            <div class="pod-right">
+              <h5>The design principles</h5>
+              <div class="pod-midd">
+                <p>Episode 1 . Season 2</p>
+                <div class="pod-controls">
+                  <i><img src="./Assets/play-pause-button.png" alt="" /></i>
+                  <i><img src="./Assets/next.png" alt="" /></i>
+                </div>
+              </div>
+              <div class="pod-bottom">
+                <span>1:56</span>
+                <input
+                  type="range"
+                  class="progress-slider"
+                  min="0"
+                  max="100"
+                  value="18" />
+                <span>-4:44</span>
+              </div>
+            </div>
+          </div>
+          <div class="podcast-card">
+            <div class="pod-img">
+              <img src="./Assets/main-img-design.png" alt="" />
+            </div>
+            <div class="pod-right">
+              <h5>The design principles</h5>
+              <div class="pod-midd">
+                <p>Episode 1 . Season 2</p>
+                <div class="pod-controls">
+                  <i><img src="./Assets/play-pause-button.png" alt="" /></i>
+                  <i><img src="./Assets/next.png" alt="" /></i>
+                </div>
+              </div>
+              <div class="pod-bottom">
+                <span>1:56</span>
+                <input
+                  type="range"
+                  class="progress-slider"
+                  min="0"
+                  max="100"
+                  value="18" />
+                <span>-4:44</span>
+              </div>
+            </div>
+          </div>
+          <div class="podcast-card">
+            <div class="pod-img">
+              <img src="./Assets/main-img-design.png" alt="" />
+            </div>
+            <div class="pod-right">
+              <h5>The design principles</h5>
+              <div class="pod-midd">
+                <p>Episode 1 . Season 2</p>
+                <div class="pod-controls">
+                  <i><img src="./Assets/play-pause-button.png" alt="" /></i>
+                  <i><img src="./Assets/next.png" alt="" /></i>
+                </div>
+              </div>
+              <div class="pod-bottom">
+                <span>1:56</span>
+                <input
+                  type="range"
+                  class="progress-slider"
+                  min="0"
+                  max="100"
+                  value="18" />
+                <span>-4:44</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="offers">
+        <h2>We Offer The Best For You</h2>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint, aut!
+        </p>
+        <div class="main-offers">
+          <div class="offer-details">
+            <div class="offer-img"><img src="./Assets/HQ.png" alt="" /></div>
+            <h3>High Quality Audio</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae,
+              inventore.
+            </p>
+          </div>
+          <div class="offer-details">
+            <div class="offer-img">
+              <img src="./Assets/multi-platform.png" alt="" />
+            </div>
+            <h3>Multi Platform</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae,
+              inventore.
+            </p>
+          </div>
+          <div class="offer-details">
+            <div class="offer-img">
+              <img src="./Assets/intresting.png" alt="" />
+            </div>
+            <h3>Interesting Content</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae,
+              inventore.
+            </p>
+          </div>
+          <div class="offer-details">
+            <div class="offer-img"><img src="./Assets//alot.png" alt="" /></div>
+            <h3>A lot of Podcasts</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae,
+              inventore.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="testimonials">
+        <h2 class="testimonial-header">TESTIMONIALS</h2>
+        <h2>Our Lovely Students Reviews</h2>
+        <div class="testimonials-main">
+          <div class="slider-btn">
+            <img src="./Assets/review1.png" alt="" />
+          </div>
+          <div class="testimonials-slider">
+            <div class="testimonial-card">
+              <h3>Amazing Information</h3>
+              <h3><span>Podcast </span> December 12</h3>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Pariatur eaque in impedit, inventore placeat amet qui
+                praesentium.
+              </p>
+              <div class="testmonial-bottom">
+                <div class="avatar-img">
+                  <img src="./Assets/avatar1.png" alt="" />
+                </div>
+                <div class="name-text">
+                  <h4>Enam Baity</h4>
+                  <p>UI/UX Designer</p>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-card">
+              <h3>Amazing Information</h3>
+              <h3><span>Podcast </span> December 12</h3>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Pariatur eaque in impedit, inventore placeat amet qui
+                praesentium.
+              </p>
+              <div class="testmonial-bottom">
+                <div class="avatar-img">
+                  <img src="./Assets/avatar2.png" alt="" />
+                </div>
+                <div class="name-text">
+                  <h4>Edem Thany</h4>
+                  <p>Web Developer</p>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-card">
+              <h3>Amazing Information</h3>
+              <h3><span>Podcast </span> December 12</h3>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Pariatur eaque in impedit, inventore placeat amet qui
+                praesentium.
+              </p>
+              <div class="testmonial-bottom">
+                <div class="avatar-img">
+                  <img src="./Assets/avatar3.png" alt="" />
+                </div>
+                <div class="name-text">
+                  <h4>Cassandra</h4>
+                  <p>Digital Marketer</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slider-btn">
+            <img src="./Assets/review2.png" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <section class="pricing-section">
+        <h2>Powerful Features For Powerful Creators</h2>
+        <p style="font-size: 1.4rem">Choose a plan that's right for you</p>
+        <div class="toggles">
+          <h4>Pay monthly</h4>
+          <div class="toggle-container">
+            <input type="checkbox" id="toggle" class="toggle-checkbox" />
+            <label for="toggle" class="toggle-label">
+              <span class="toggle-thumb"></span>
+            </label>
+          </div>
+          <h4>Pay Yearly</h4>
+        </div>
+
+        <div class="pricing-cards">
+          <div class="pricing-card">
+            <h3>Freebie</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            <h1>$0 <span>/ Month </span></h1>
+            <div class="get-started">Get Started Now</div>
+            <div class="pricing-perks">
+              <div class="pricing-perk">
+                <i><img src="./Assets/check.png" alt="" /></i>
+                <p>Lorem ipsum dolor sit amet.</p>
+              </div>
+              <div class="pricing-perk">
+                <i><img src="./Assets/check.png" alt="" /></i>
+                <p>Lorem ipsum dolor sit amet.</p>
+              </div>
+              <div class="pricing-perk">
+                <i><img src="./Assets/cross.png" alt="" /></i>
+                <p>Lorem ipsum dolor sit amet.</p>
+              </div>
+              <div class="pricing-perk">
+                <i><img src="./Assets/cross.png" alt="" /></i>
+                <p>Lorem ipsum dolor sit amet.</p>
+              </div>
+            </div>
+          </div>
+          <div class="pricing-card">
+            <h3>Professional</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            <h1>$25 <span>/ Month </span></h1>
+            <div class="get-started">Get Started Now</div>
+            <div class="pricing-perks">
+              <div class="pricing-perk">
+                <i><img src="./Assets/check.png" alt="" /></i>
+                <p>Lorem ipsum dolor sit amet.</p>
+              </div>
+              <div class="pricing-perk">
+                <i><img src="./Assets/check.png" alt="" /></i>
+                <p>Lorem ipsum dolor sit amet.</p>
+              </div>
+              <div class="pricing-perk">
+                <i><img src="./Assets/check.png" alt="" /></i>
+                <p>Lorem ipsum dolor sit amet.</p>
+              </div>
+              <div class="pricing-perk">
+                <i><img src="./Assets/check.png" alt="" /></i>
+                <p>Lorem ipsum dolor sit amet.</p>
+              </div>
+            </div>
+          </div>
+          <div class="pricing-card">
+            <h3>Enterprise</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            <h1>$100 <span>/ Month </span></h1>
+            <div class="get-started">Get Started Now</div>
+            <div class="pricing-perks">
+              <div class="pricing-perk">
+                <i><img src="./Assets/check.png" alt="" /></i>
+                <p>Lorem ipsum dolor sit amet.</p>
+              </div>
+              <div class="pricing-perk">
+                <i><img src="./Assets/check.png" alt="" /></i>
+                <p>Lorem ipsum dolor sit amet.</p>
+              </div>
+              <div class="pricing-perk">
+                <i><img src="./Assets/check.png" alt="" /></i>
+                <p>Lorem ipsum dolor sit amet.</p>
+              </div>
+              <div class="pricing-perk">
+                <i><img src="./Assets/check.png" alt="" /></i>
+                <p>Lorem ipsum dolor sit amet.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="newsletter">
+        <div class="newsletter-left">
+          <h3>Try It For Free</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Your email" class="email-input" />
+            <button type="submit" class="subscribe-btn">Subscribe</button>
+          </form>
+        </div>
+        <div class="newsletter-right">
+          <img
+            src="./Assets/young-african-american-woman-s-portrait-isolated-pink-background 1.png"
+            alt="" />
+        </div>
+      </section>
+
+      <footer>
+        <div class="footer-top">
+          <h2>
+            Learn how to grow audience <br />
+            fast in Twitter
+          </h2>
+
+          <a href="#" class="download-button">Download Free Chapter</a>
+        </div>
+
+        <hr class="footer-divider" />
+
+        <div class="footer-columns">
+          <div class="footer-column">
+            <h3>About the Podcast</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem
+              officiis nisi temporibus nam fuga veniam cum sint!
+            </p>
+          </div>
+
+          <div class="footer-column">
+            <h3>Company</h3>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Press</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>Help</h3>
+            <ul>
+              <li><a href="#">Support</a></li>
+              <li><a href="#">FAQs</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Forums</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>Reference</h3>
+            <ul>
+              <li><a href="#">Terms</a></li>
+              <li><a href="#">Privacy</a></li>
+              <li><a href="#">Cookies</a></li>
+              <li><a href="#">Guidelines</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-social-icons">
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-x-twitter"></i></a>
+          <a href="#"><i class="fab fa-facebook"></i></a>
+        </div>
+
+        <div class="footer-bottom">
+          <p>
+            &copy 2024 ZENith LLC Inc. Made with
+            <span class="lang1"><i class="fa-brands fa-html5"></i> </span>
+            <span class="lang2"><i class="fa-brands fa-css3-alt"></i></span> and
+            <span class="lang3"><i class="fa-brands fa-js"></i></span> by
+            <a href="https://github.com/ZENith-95">ZENith</a>
+            <i class=""></i>
+          </p>
+        </div>
+      </footer>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

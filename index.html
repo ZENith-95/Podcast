@@ -12,22 +12,43 @@
   <body>
     <header class="site-header">
       <nav class="main-nav">
-        <div class="logo">
-          <img
-            src="./Assets/pod-logo.png"
-            alt="Podcast Logo"
-            class="logo-icon" />
-          <span>Podcast</span>
-        </div>
-        <ul class="nav-list">
-          <li><a href="#">Episode</a></li>
-          <li><a href="#">Review</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-        <div class="nav-actions">
-          <a href="#" class="login-btn">Login</a>
-          <a href="#" class="subscribe-btn">Subscribe</a>
+        <a style="width: fit-content" href="#">
+          <div class="logo">
+            <img
+              src="./Assets/pod-logo.png"
+              alt="Podcast Logo"
+              class="logo-icon" />
+            <span>Podcast</span>
+          </div>
+        </a>
+
+        <div class="nav-bar">
+          <div class="nav-pc">
+            <ul class="nav-list">
+              <li><a href="#">Episode</a></li>
+              <li><a href="#">Review</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+              <a href="#" class="login-btn">Login</a>
+              <a href="#" class="subscribe-btn">Subscribe</a>
+            </div>
+          </div>
+          <div class="hamburger" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+          </div>
+          <div class="drop-down" id="dropdownMenu">
+            <i class="fa-solid fa-x" onclick="hideMenu()"></i>
+            <a href="#">Episode</a>
+            <a href="#">Review</a>
+            <a href="#">Blog</a>
+            <a href="#">Contact</a>
+            <div style="width: fit-content" class="nav-actions">
+              <a href="#" class="login-btn">Login</a>
+              <a href="#" class="subscribe-btn">Subscribe</a>
+            </div>
+          </div>
         </div>
       </nav>
     </header>
@@ -171,12 +192,14 @@
             eius consectetur iusto itaque dolor, dignissimos nesciunt.
           </p>
           <div class="popular-bottom">
-            <i style="cursor: pointer"
-              ><img src="./Assets/pop-pause.png" alt=""
-            /></i>
-            <div class="popular-bottom-details">
-              <h3>Episode 1. Season 2</h3>
-              <p>Duration, 12:56</p>
+            <div class="popular-bottom-left">
+              <i style="cursor: pointer"
+                ><img src="./Assets/pop-pause.png" alt=""
+              /></i>
+              <div class="popular-bottom-details">
+                <h3>Episode 1. Season 2</h3>
+                <p>Duration, 12:56</p>
+              </div>
             </div>
             <button>Open page</button>
           </div>
@@ -464,7 +487,7 @@
 
       <section class="pricing-section">
         <h2>Powerful Features For Powerful Creators</h2>
-        <p style="font-size: 1.4rem">Choose a plan that's right for you</p>
+        <p>Choose a plan that's right for you</p>
         <div class="toggles">
           <h4>Pay monthly</h4>
           <div class="toggle-container">
